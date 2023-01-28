@@ -1,5 +1,6 @@
 from __future__ import print_function
 
+from build_lambda import build_lambda
 from setuptools import setup, find_packages
 
 
@@ -27,6 +28,9 @@ setup(name='pyweaving',
           'six>=1.5.2',
       ],
       license='MIT',
+      cmdclass={
+          'build_lambda': build_lambda,
+      },
       packages=find_packages(),
       test_suite='nose.collector',
       tests_require=['nose'],
