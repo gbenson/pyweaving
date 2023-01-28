@@ -33,7 +33,7 @@ class build_lambda(Command):
 
         name = self.distribution.get_name()
         self.spawn((
-            "docker", "build",
+            "buildah", "bud",
             "--tag", name,
             "--build-arg", f"{name.upper()}_WHEEL={os.path.basename(wheel)}",
             "."
