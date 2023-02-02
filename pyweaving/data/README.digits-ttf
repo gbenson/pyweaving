@@ -1,0 +1,2 @@
+pip install fonttools
+pyftsubset /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf --unicodes=U+0030-0039 --output-file=digits.ttf

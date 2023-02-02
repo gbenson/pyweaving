@@ -8,7 +8,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 __here__ = os.path.dirname(__file__)
 
-font_path = os.path.join(__here__, 'data', 'Arial.ttf')
+font_path = os.path.join(__here__, 'data', 'digits.ttf')
 
 
 class ImageRenderer(object):
